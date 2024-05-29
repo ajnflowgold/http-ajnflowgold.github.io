@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="style.css" />
+ <title>AJN - L'ami de tous les CM</title>
+ <style>
+ 	/* Définition des polices personnalisées */
+@font-face
+{
+ font-family: 'BallparkWeiner';
+ src: url('polices/ballpark.eot');
+ src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+ url('polices/ballpark.woff') format('woff'),
+ url('polices/ballpark.ttf') format('truetype'),
+ url('polices/ballpark.svg#BallparkWeiner') format('svg');
+font-weight: normal;
+ font-style: normal;
+}
+@font-face
+{
+ font-family: 'Dayrom';
+ src: url('polices/dayrom.eot');
+ src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+ url('polices/dayrom.woff') format('woff'),
+ url('polices/dayrom.ttf') format('truetype'),
+ url('polices/dayrom.svg#Dayrom') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+/* Eléments principaux de la page */
+body
+{
+ background: url('fond_jaune.jpg');
+ font-family: 'Trebuchet MS', Arial, sans-serif;
+ color: #181818;
+}
+#bloc_page
+{
+ width: 900px;
+ margin: auto;
+}
+section h1, footer h1, nav a
+{
+ font-family: Dayrom, serif;
+ font-weight: normal;
+ text-transform: uppercase;
+}
+/* Header */
+header
+{
+ background: url('sép.jpg') repeat-x bottom;
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+#titre_principal
+{
+ display: flex;
+ flex-direction: column;
+}
+#logo
+{
+ display: flex;
+ flex-direction: row;
+ align-items: baseline;
+}
+#logo img
+{
+ width: 59px;
+ height: 60px;
+}
+header h1
+{
+ font-family: 'BallparkWeiner', serif;
+ font-size: 2.5em;
+ font-weight: normal;
+ margin: 0 0 0 10px;
+ color: whitesmoke;
+}
+header h2
+{
+ font-family: Dayrom, serif;
+ font-size: 1.1em;
+ margin-top: 0px;
+ font-weight: normal;
+ color: blueviolet;
+}
+nav ul
+{
+ list-style-type: none;
+ display: flex;
+}
+nav li
+{
+ margin-right: 15px;
+}
+nav a
+{
+ font-size: 1.3em;
+ color: blue;
+ padding-bottom: 3px;
+ text-decoration: none;
+}
+nav a:hover
+{
+ color: red;
+ border-bottom: 3px solid #760001;
+}
+#banniere_image
+{
+ margin-top: 15px;
+ height: 200px;
+ border-radius: 5px;
+ background: url('agh.jpg') no-repeat;
+ position: relative;
+ box-shadow: 0px 4px 4px #1c1a19;
+ margin-bottom: 25px;
+}
+#banniere_description
+{
+ position: absolute;
+ bottom: 0;
+ border-radius: 0px 0px 5px 5px;
+ width: 99.5%;
+ height: 33px;
+ padding-top: 15px;
+ padding-left: 4px;
+ background-color: rgba(24,24,24,0.8);
+ color: white;
+ font-size: 0.8em;
+
+}
+.bouton_rouge
+{
+ height: 25px;
+ position: absolute;
+ right: 5px;
+ bottom: 5px;
+ background:  repeat-x;
+ border: 1px solid #760001;
+ border-radius: 5px;
+ font-size: 1.2em;
+ text-align: center;
+ padding: 3px 8px 0px 8px;
+ color: white;
+ text-decoration: none;
+ border-bottom: 3px solid red;
+}
+.bouton_rouge img
+{
+ border: 0;
+}
+section
+ </style>
+ </head>
+
+ <body>
+ <div id="bloc_page">
+ <header>
+ <div id="titre_principal">
+ <div id="logo">
+ <img src="logo.png" alt="Logo de
+Zozor" />
+ <h1>AJN</h1>
+ </div>
+ <h2><em>L'ami de tous les CM</em></h2>
+ </div>
+</div>
+           <nav>
+               <ul>
+                  <li><a href="AmidetouslesCMs.html">Accueil</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+                  <li><a href="Offres.html">Offres</a></li>
+                  <li><a href="CV.html">CV</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                </ul>
+ </nav>
+ </header>
+ <section>
+ <img src="cv.png" alt="CV de
+AJN" />
+<img src="cv2.png" alt="CV de
+AJN (suite)" />
+<h2><p><a href="MON_CV.pdf">Télécharger mon CV</a></p></h2>
+</section>
+<footer>
+
+    <p>&copy; 2024 Joachim AJN GBETCHOEVI - Tous Droits Reservés</p></br>
+        <p>Porto Novo-Bénin</p>
+        <p><a href="https://wa.me/+22953004443">Contactez-Nous</a></p>
+
+
+ </footer>
+</body>
+</html>
