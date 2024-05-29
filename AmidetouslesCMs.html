@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="style.css" />
+ <title>AJN - L'ami de tous les CM</title>
+ <style>
+ 	/* Définition des polices personnalisées */
+@font-face
+{
+ font-family: 'BallparkWeiner';
+ src: url('polices/ballpark.eot');
+ src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+ url('polices/ballpark.woff') format('woff'),
+ url('polices/ballpark.ttf') format('truetype'),
+ url('polices/ballpark.svg#BallparkWeiner') format('svg');
+font-weight: normal;
+ font-style: normal;
+}
+@font-face
+{
+ font-family: 'Dayrom';
+ src: url('polices/dayrom.eot');
+ src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+ url('polices/dayrom.woff') format('woff'),
+ url('polices/dayrom.ttf') format('truetype'),
+ url('polices/dayrom.svg#Dayrom') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+/* Eléments principaux de la page */
+body
+{
+ background: url('fond_jaune.jpg');
+ font-family: 'Trebuchet MS', Arial, sans-serif;
+ color: #181818;
+}
+#bloc_page
+{
+ width: 900px;
+ margin: auto;
+}
+section h1, footer h1, nav a
+{
+ font-family: Dayrom, serif;
+ font-weight: normal;
+ text-transform: uppercase;
+}
+/* Header */
+header
+{
+ background: url('sép.jpg') repeat-x bottom;
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+#titre_principal
+{
+ display: flex;
+ flex-direction: column;
+}
+#logo
+{
+ display: flex;
+ flex-direction: row;
+ align-items: baseline;
+}
+#logo img
+{
+ width: 59px;
+ height: 60px;
+}
+header h1
+{
+ font-family: 'BallparkWeiner', serif;
+ font-size: 2.5em;
+ font-weight: normal;
+ margin: 0 0 0 10px;
+ color: whitesmoke;
+}
+header h2
+{
+ font-family: Dayrom, serif;
+ font-size: 1.1em;
+ margin-top: 0px;
+ font-weight: normal;
+ color: whitesmoke;
+}
+nav ul
+{
+ list-style-type: none;
+ display: flex;
+}
+nav li
+{
+ margin-right: 15px;
+}
+nav a
+{
+ font-size: 1.3em;
+ color: whitesmoke;
+ padding-bottom: 3px;
+ text-decoration: none;
+}
+nav a:hover
+{
+ color: red;
+ border-bottom: 3px solid #760001;
+}
+#banniere_image
+{
+ margin-top: 15px;
+ height: 200px;
+ border-radius: 5px;
+ background: url('agh.jpg') no-repeat;
+ position: relative;
+ box-shadow: 0px 4px 4px #1c1a19;
+ margin-bottom: 25px;
+}
+#banniere_description
+{
+ position: absolute;
+ bottom: 0;
+ border-radius: 0px 0px 5px 5px;
+ width: 99.5%;
+ height: 33px;
+ padding-top: 15px;
+ padding-left: 4px;
+ background-color: rgba(24,24,24,0.8);
+ color: white;
+ font-size: 0.8em;
+
+}
+.bouton_rouge
+{
+ height: 25px;
+ position: absolute;
+ right: 5px;
+ bottom: 5px;
+ background:  repeat-x;
+ border: 1px solid #760001;
+ border-radius: 5px;
+ font-size: 1.2em;
+ text-align: center;
+ padding: 3px 8px 0px 8px;
+ color: white;
+ text-decoration: none;
+ border-bottom: 3px solid red;
+}
+.bouton_rouge img
+{
+ border: 0;
+}
+section
+{
+ display: flex;
+ margin-bottom: 20px;section
+{
+ 
+ display: inline-block;
+ border: 1px solid blue;
+ vertical-align: top;
+}
+}
+article, aside
+{
+ text-align: justify;
+}
+article
+{
+ margin-right: 20px;
+ flex: 3;
+}
+.ico_categorie
+{
+ vertical-align: middle;
+ margin-right: 8px;
+}
+article p
+{
+ font-size: 0.7em;
+}
+aside
+{
+ flex: 1.2;
+ position: relative;
+ background-color: #706b64;
+ box-shadow: 0px 2px 5px #1c1a19;
+ border-radius: 5px;
+ padding: 10px;
+ color: white;
+ font-size: 0.9em;
+}
+#fleche_bulle
+{
+ position: absolute;
+ top: 10px;
+ left: -12px;
+}
+#dest2
+{
+ text-align: center;
+}
+#dest2 img
+{
+	position: absolute;
+ top: 10px;
+ left: -12px;
+ border: 1px solid #181818;
+}
+aside img
+{
+ margin-right: 5px;
+ display: inline-block;
+ border: 1px solid blue;
+ vertical-align: top
+}
+footer
+{
+ display: flex;
+ background: url('sép.jpg') no-repeat top center,
+url('sép.jpg') repeat-x top, url('omb.jpg') repeat-x top;
+ padding-top: 25px;
+}
+footer p, footer ul
+{
+ font-size: 0.8em;
+}
+footer h1
+{
+ font-size: 1.1em;
+}
+#tweet
+{
+ width: 58%;
+}
+#mes_photos
+{
+ width: 35%;
+}
+#mes_amis
+{
+ width: 31%;
+}
+#mes_photos img
+{
+ border: 1px solid #181818;
+ margin-right: 2px;
+}
+#listes_amis
+{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 0;
+}
+#mes_amis ul
+{
+ list-style-image: url('images/ico_liensexterne.png');
+ padding-left: 2px;
+}
+#mes_amis a
+{
+ text-decoration: none;
+ color: #760001;
+} 
+ </style>
+ </head>
+
+ <body>
+ <div id="bloc_page">
+ <header>
+ <div id="titre_principal">
+ <div id="logo">
+ <img src="logo.png" alt="Logo de
+Zozor" />
+ <h1>AJN</h1>
+ </div>
+ <h2><em>L'ami de tous les CMs</em></h2>
+ </div>
+
+ <nav>
+ <ul>
+ <li><a href="AmidetouslesCMs.html">Accueil</a></li>
+ <li><a href="Blog.html">Blog</a></li>
+ <li><a href="Offres.html">Offres</a></li>
+ <li><a href="CV.html">CV</a></li>
+ <li><a href="Contact.html">Contact</a></li>
+ </ul>
+ </nav>
+ </header>
+
+ <div id="banniere_image">
+ <div id="banniere_description">
+ <em>Découvrez nos offres en exclusivité ...</em>
+ <a href="Offres.html" class="bouton_rouge">Voir nos forfaits<img
+src="" alt="" /></a>
+ </div>
+ </div>
+
+ <section>
+ <article>
+ <h1>Bienvenu dans mon Blog</h1>
+
+           <p>As-tu suivi(e) une formaton pour devenir CM et tu te sens en fin prêt à créer ta propre micro-entreprise ? Félicitations ! Maintenant, il te reste plus qu'à trouver tes premières missions et commencer par vivre de ton métier. Plus facile qu'à dire, n'est-ce pas ? La formation que tu as suivie t'a appris à bien faire ton métier, mais pour développer des revenus stables, tu dois aussi MONTER EN COMPETENCE sur la partie business, la prospection et de la vente.</p>
+
+            <p>Mais alors, comment trouver ses premiers clients en community management quand on n'a ni relation ni expérience professionnelle ? Comment vivre pleinement de ton métier tout au long de ta carrière de community manager ? Rassure-toi : même si tu débutes, ton expertise est recherchée ! Tu n'as pas besoin de relation, ni assez d'expérience. Ce ne sont pas les prospects qui manquent, d'ailleurs. Dans ce blog, je partage des méthodes infaillibles pour t'aider tout au long de ta carrière de Community Manager. Ensemble, on traite:</p>
+
+	<h3>Comment décrocher tes premiers clients ?</h3> 
+	<h3>Comment trouver ton positonnemment idéal ?</h3>
+	<h3>Comment créer une offre irrésistible ?</h3>
+	<h3>Comment créer un compte dédié à son activité de community manager ?</h3>
+	<h3>Comment créer du contenu à valeur ajoutée pour trouver des clients en community manager ?</h3>
+	<h3>Comment prospecter pour trouver des clients en community management ?</h3>
+	<h3>Comment rediger un appel découverte pour décrocher des contrats CM ?</h3>
+	<h3>Comment se lancer en tant que community manager freelance ?</h3>
+	<h3>Comment vendre efficacement tes services sur les plateformes de freelance ?</h3>
+	<h3>Comment convertir tes abonnés en client ?</h3>
+	<h3>Où trouver des clients qui paient bien et des contrats qui valent beaucoup ? ...etc</h3> 
+
+	ALORS PRETS POUR L'AVENTURE ?
+
+	               Rends-toi sur chacun de ces liens pour découvrir ces méthodes infaillibles dont je t'ai parlées. Il ne te reste plus qu'à les appliquer et voir ta carrière de Community Manager Freelance décoller !
+	               J'espère te rencontrer un jour à l'autre bout du monde. Bonne chance à toi ! Gagnes comfortablement ta vie !
+
+<h4>Récupères ton cadeau de bienvenue !!!</h4>
+
+ <p>Tu es nouveau sur mon site Bloc ? Je t'ai preparé un cadeau de bienvenue pour t'aider à planifier et démarrer ton activité comme un pro. Envoies "WelcomeGift" par mail en renseignant tes infos dans les cages ci-après.</p>
+
+     Durées d'expériences en tant que CM:<br>
+ 	<select name="expérience">
+ 		
+                        <option value="exp0">00 - 06 mois</option>
+                        <option value="exp1">06 mois - 01 an</option>
+                        <option value="exp2">01 an - 03 ans</option>
+                        <option value="exp3">03 ans - +  ans</option>
+       </select>
+       <form action="comments"
+       method="POST">
+       <label for="name">Nom & Prénoms:</label><br>
+       <input type="text" id="name"
+       name="name"><br>
+       
+       <label for="mail">Adresse e-mail:</label><br>
+       <input type="text" id="name"
+       name="mail"><br>
+      Par quel moyen vous nous aviez connu:<br>
+ 	<select name="moyen">
+ 		
+                        <option value="moy0">Par recommandation d'une personne</option>
+                        <option value="moy1">Par la Publicité Ad Facebook</option>
+                        <option value="moy2">Par la Publication sur nos réseaux sociaux</option>
+                        <option value="moy3">Google</option>
+                        <option value="moy4">Autres</option>
+
+       <input type="submit" value="RECUPERER MON CADEAU">
+       </form>
+
+
+ 
+ </article>
+ <aside>
+ 
+ 
+
+<h1>À propos de l'auteur</h1>
+ <p>Je suis Joachim AJN GBETCHOEVI&nbsp;: Le " CM " qu'il vous faut pour bâtir votre présence en ligne très solide et vendre éfficacement vos services.
+</p>
+ <p>Community Manager et un Brand Designer axé sur les résultats, avec un sens des tendances et un talent pour le contenu engageant. Avec [03] ans d'expertise, je me spécialise dans la gestion de communauté en ligne sur 8 plateformes numériques - médias sociaux - tout en développant des stratégies qui stimulent la notoriété de la marque et favorisent des connexions significatives. De la création de contenu à la gestion de communauté, je m'efforce de fournir des résultats mesurables. Je peux vous aider à reserver votre temps que vous passez sur les réseaux sociaux pour autres choses.
+
+Collaborons et portons votre présence sur les réseaux sociaux vers de nouveaux sommets !
+
+
+
+Vous aimeriez tester ma magie ? ... Reservez un RDV en cliquant/ <a href="Appointment_test.html">ICI</a> ...</p>
+
+
+Visitez mes réseaux sociaux
+<div class="sc-dYzWWc hKRVBN"><a id="button-7706992f" href="https://facebook.com/ajnflowgold77" rel="" class="https://facebook.com/ajnflowgold77"><div class="https://facebook.com/ajnflowgold77">FACEBOOK</div></a></div>
+<div class="sc-dYzWWc hKRVBN"><a id="button-7706992f" href="https://www.twitter.com/flowgold77" rel="" class="https://www.twitter.com/flowgold77"><div class="https://www.twitter.com/flowgold77">TWITTER</div></a></div>
+<div class="sc-dYzWWc hKRVBN"><a id="button-7706992f" href="https://www.instagram.com/flowgold77" rel="" class="https://www.instagram.com/@ajnflowgold77"><div class="https://www.instagram.com/@ajnflowgold77">INSTAGRAM</div></a></div>
+<div class="sc-dYzWWc hKRVBN"><a id="button-7706992f" href="https://bj.linkedin.com/in/joachim-ajn-gbetchoevi-17b824278" rel="" class="https://bj.linkedin.com/in/joachim-ajn-gbetchoevi-17b824278"><div class="https://bj.linkedin.com/in/joachim-ajn-gbetchoevi-17b824278">LINKEDIN</div></a></div>
+
+ <p><img src="F.png" alt="Facebook" /><img
+src="X.png" alt="Twitter" /><img src="I.png"
+alt="Instagram" /><img src="L.png" alt="LinkedIn" /></p>
+ </aside>
+ </section>
+
+ <footer>
+ <div id="tweet">
+ <h1>LA VIE D'UN CM</h1>
+ <p>Citation du jour:</p>
+ <p><em>"Chaque jour, le CM plonge dans le vaste océan des médias sociaux, créant des contenus originaux et engageant, naviguant à travers les flux incessants de messages, commentaires et de reactions pour cultiver des communautés numériques florissantes." - #ajnflowgold</em></p>
+ </div>
+ <div id="mes_photos">
+ <h1>Mes photos</h1>
+ <p><img src="dest2.png" alt="Photographie"
+/><img src="dest2.png" alt="Photographie" />
+ </div>
+
+        <p>&copy; 2024 Joachim AJN GBETCHOEVI - Tous Droits Reservés</p></br>
+        <p>Porto Novo-Bénin</p>
+        <p><a href="https://wa.me/+22953004443">Contactez-Nous</a></p>
+
+ </footer>
+ </div>
+ </body>
+</html>
